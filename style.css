@@ -10,7 +10,6 @@ body {
 
 .container {
     margin: 0 50px;
-    width: 100%;
 }
 
 
@@ -678,18 +677,25 @@ body {
     .section3{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
         flex-wrap: wrap;
-        min-height: 500px;
+        height: auto;
         width: 100%;
     }
 
     .section3__img{
         margin: 0;
-        padding: 30px;
+        padding: 0;
+        width: 100%;
     }
 
     .section3__img img{
         width: 100%;
+        height:auto;
+        margin:0;
+        object-fit:cover;
     }
 
     .line{
@@ -705,7 +711,21 @@ body {
     }
 
     .section4_img,.section5_img,.section6_cards,.section7_card{
-        flex-basis: 48%;
+        flex-basis: 47%;
+    }
+    
+    .section5_img i{
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        padding: 0;
     }
 
     .section9{
@@ -724,9 +744,6 @@ body {
     }
 
     .section10_cards{
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-
-
 }
