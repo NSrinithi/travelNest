@@ -20,6 +20,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .menu {
@@ -301,10 +305,15 @@ body {
 
 .section5_img i {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
     background-color: white;
-    padding: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -365,10 +374,15 @@ body {
 
 .section6_cards i {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
     background-color: white;
-    padding: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -398,6 +412,55 @@ body {
 }
 
 .section7_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.section7_card{
+    flex-basis: 24%;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section7_card:hover img {
+    opacity: 0.7;
+}
+
+.section7_card>img {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section7_card i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.section7_name {
+    font-size: 18px;
+    font-weight: 500;
+    min-height: 60px;
+}
+
+
+/* .section7_container {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -432,6 +495,10 @@ body {
     padding: 10px;
     border-radius: 100%;
     cursor: pointer;
+} */
+
+.invisible{
+    visibility: hidden;
 }
 
 .section7_likelyBtn {
@@ -454,11 +521,7 @@ body {
     background-color: black
 }
 
-.section7_name {
-    font-size: 18px;
-    font-weight: 500;
 
-}
 
 .section8 {
     margin-top: 50px;
@@ -670,6 +733,7 @@ body {
     }
 
     .btn{
+        color: black;
         width: 70px;
         font-size: 16px;
     }
@@ -713,7 +777,15 @@ body {
     .section4_img,.section5_img,.section6_cards,.section7_card{
         flex-basis: 47%;
     }
-    
+
+    .section5_cards{
+        align-items: flex-start;
+    }
+
+    .section5_name{
+        min-height: 100px;
+    }
+
     .section5_img i{
         top: 8px;
         right: 8px;
@@ -727,6 +799,40 @@ body {
         border-radius: 50%;
         padding: 0;
     }
+
+    .section6_cards i{
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+    .section7_container{
+        align-items: flex-start;
+    }
+
+    .section7_card i{
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+    
 
     .section9{
         display: flex;
